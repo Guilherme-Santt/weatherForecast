@@ -1,0 +1,34 @@
+.containerSearch{
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    align-items: column;
+    background-color: #f3efef;
+    border-radius: 10px;
+    width: 600px;
+    margin: 0 auto;
+    padding: 30px;
+    gap: 50px;
+}
+.inputType{
+    height: 40px;
+    width: 300px;
+    border-radius: 5px;
+    border: none;
+    font-size: 15px;
+}
+
+
+/* response */
+
+.responseData {
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+    width: 500px;
+    transition: 0.3s;
+    opacity: 1;
+}
+/* .active {
+    opacity: 1;
+    height: 500px;
+} */
