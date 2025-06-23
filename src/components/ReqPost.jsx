@@ -1,6 +1,6 @@
 import { use, useEffect, useState } from "react"
 
-function Testando(){
+function ReqPost(){
     const [resourceType, setResourceType] = useState("posts")
     const [items, setItems] = useState([])
 
@@ -33,4 +33,4 @@ function Testando(){
         </div>
     )
 }
-export default Testando
+export default ReqPost
