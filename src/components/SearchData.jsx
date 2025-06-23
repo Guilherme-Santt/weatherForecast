@@ -1,7 +1,10 @@
 import { useEffect, useState } from 'react';
 import styles from './style.module.css';
 import ResponseData from './TemplateData';
+import Swal from 'sweetalert2';
+import withReactContent from 'sweetalert2-react-content';
 
+const MySwal = withReactContent(Swal);
 function SearchData() {
     const [local, setLocal] = useState('');
     const [weatherData, setWeatherData] = useState(null);
@@ -82,7 +85,7 @@ function SearchData() {
     return (
         <div className={styles.containerSearch}>
             <div>
-                <h1>Previsão para hoje: {dataFormatada } <strong id='local'></strong></h1>
+                <h1>Previsão para hoje: {dataFormatada} <strong id='local'></strong></h1>
                 <form onSubmit={handleSubmit}>
                     <input
                         className={styles.inputType}
